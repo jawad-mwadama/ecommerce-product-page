@@ -41,12 +41,13 @@ function Hero() {
             everything the weather can offer
           </p>
 
-          <div className="flex items-center gap-6 py-2">
+          <div className="flex items-center gap-4 py-2">
             <span className="text-3xl font-bold">$125</span>
             <div className="rounded-lg bg-black px-1.5 text-white">
               <span>50%</span>
             </div>
           </div>
+          <span className="text-stone-500 line-through">$250</span>
         </div>
       </div>
     </div>
