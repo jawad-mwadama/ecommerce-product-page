@@ -24,18 +24,32 @@
 import image1 from "../../assets/images/image-product-1.jpg";
 function Hero() {
   return (
-    <div className="">
-      <img src={image1} className="h-64" alt="image1" />
-    </div>
+    <div className="mx-auto flex max-w-5xl items-center justify-center border border-blue-600 pt-16">
+      <div className="flex justify-between gap-18 px-16">
+        <img src={image1} className="h-96 rounded-xl" alt="image1" />
+        <div className="max-w-sm border border-red-500 px-3 py-4">
+          <span className="text-sm font-bold tracking-wider text-stone-400">
+            SNEAKER COMPANY
+          </span>
+          <h1 className="py-2 text-3xl font-bold tracking-normal">
+            Fall Limited Edition Sneakers
+          </h1>
 
-    // <div>
-    //   {/* image side */}
-    //   <div>
-    //     {images.map((image) => (
-    //       <img src={image.image1} key={image.id} />
-    //     ))}
-    //   </div>
-    // </div>
+          <p className="py-2 text-sm text-stone-500">
+            These low-profle sneakers are your perfect casual wear
+            companion.Featuring a durable rubber outer sole,they'll withstand
+            everything the weather can offer
+          </p>
+
+          <div className="flex items-center gap-6 py-2">
+            <span className="text-3xl font-bold">$125</span>
+            <div className="rounded-lg bg-black px-1.5 text-white">
+              <span>50%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
