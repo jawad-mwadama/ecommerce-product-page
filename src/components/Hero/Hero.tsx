@@ -27,8 +27,8 @@ function Hero() {
     <div className="mx-auto flex max-w-5xl items-center justify-center border border-blue-600 pt-16">
       <div className="flex justify-between gap-18 px-16">
         <img src={image1} className="h-96 rounded-xl" alt="image1" />
-        <div className="max-w-sm border border-red-500 px-3 py-4">
-          <span className="text-sm font-bold tracking-wider text-stone-400">
+        <div className="max-w-sm border border-red-500 px-3 py-6">
+          <span className="text-xs font-bold tracking-widest text-stone-400">
             SNEAKER COMPANY
           </span>
           <h1 className="py-2 text-3xl font-bold tracking-normal">
@@ -42,12 +42,14 @@ function Hero() {
           </p>
 
           <div className="flex items-center gap-4 py-2">
-            <span className="text-3xl font-bold">$125</span>
+            <span className="cursor-pointer text-3xl font-bold">$125</span>
             <div className="rounded-lg bg-black px-1.5 text-white">
               <span>50%</span>
             </div>
           </div>
-          <span className="text-stone-500 line-through">$250</span>
+          <span className="font-boldline-through cursor-pointer text-stone-500">
+            $250
+          </span>
         </div>
       </div>
     </div>

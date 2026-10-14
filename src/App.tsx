@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="text-shadow-indigo-500">
-      <h1 className="p-4">
+      <h1 className="p-5">
         <Navbar />
         <Hero />
       </h1>
