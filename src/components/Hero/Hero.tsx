@@ -42,7 +42,6 @@ function Hero() {
             companion.Featuring a durable rubber outer sole,they'll withstand
             everything the weather can offer
           </p>
-
           <div className="flex items-center gap-4 py-2">
             <span className="cursor-pointer text-3xl font-bold">$125</span>
             <div className="rounded-lg bg-black px-1.5 text-white">
@@ -52,9 +51,8 @@ function Hero() {
           <span className="cursor-pointer font-bold text-gray-400 line-through">
             $250
           </span>
-
           {/* cart and counter */}
-          <div className="flex items-center gap-4 py-2.5">
+          <div className="flex items-center gap-4 py-6">
             <Counter />
             <Cart />
           </div>
