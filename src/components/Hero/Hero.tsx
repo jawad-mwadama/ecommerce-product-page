@@ -22,12 +22,14 @@
 // ];
 
 import image1 from "../../assets/images/image-product-1.jpg";
+import Cart from "../Cart/Cart";
+import Counter from "../Counter/Counter";
 function Hero() {
   return (
     <div className="mx-auto flex max-w-5xl items-center justify-center border border-blue-600 pt-16">
       <div className="flex justify-between gap-18 px-16">
         <img src={image1} className="h-96 rounded-xl" alt="image1" />
-        <div className="max-w-sm border border-red-500 px-3 py-6">
+        <div className="max-w-sm border border-red-500 px-2.5 py-6">
           <span className="text-xs font-bold tracking-widest text-stone-400">
             SNEAKER COMPANY
           </span>
@@ -47,9 +49,15 @@ function Hero() {
               <span>50%</span>
             </div>
           </div>
-          <span className="font-boldline-through cursor-pointer text-stone-500">
+          <span className="cursor-pointer font-bold text-gray-400 line-through">
             $250
           </span>
+
+          {/* cart and counter */}
+          <div className="flex items-center gap-4 py-2.5">
+            <Counter />
+            <Cart />
+          </div>
         </div>
       </div>
     </div>
