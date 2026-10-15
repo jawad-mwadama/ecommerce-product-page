@@ -1,6 +1,6 @@
 import logo from "../../assets/images/logo.svg";
 import cartIcon from "../../assets/images/icon-cart.svg";
-import avatar from "../../assets/images/image-avatar.png";
+// import avatar from "../../assets/images/image-avatar.png";
 
 const navLinks = [
   { label: "Collections", href: "/collections" },
@@ -50,7 +50,7 @@ function Navbar() {
           className="rounded-full focus-visible:outline-2 focus-visible:outline-orange-500"
         >
           <img
-            src={avatar}
+            src="/image-avatar.png"
             alt="avatar profile"
             className="h-10 w-10 rounded-full border-2 border-transparent hover:border-orange-500"
           />
