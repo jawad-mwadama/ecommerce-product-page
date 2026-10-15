@@ -4,7 +4,7 @@ import Counter from "../Counter/Counter";
 function HeroText() {
   return (
     <div>
-      <div className="max-w-sm border border-red-500 px-2.5 py-12">
+      <div className="max-w-sm px-2.5 py-12">
         <span className="text-xs font-bold tracking-widest text-stone-400">
           SNEAKER COMPANY
         </span>
