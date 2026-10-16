@@ -79,7 +79,7 @@ function Navbar() {
         </button>
       </div>
 
-      {/* mobile nav */}
+      {/* mobile nav sidebar with the states*/}
 
       <div
         className={`fixed top-0 left-0 h-full w-[70%] bg-white p-6 transition-transform duration-300 ${nav ? "translate-x-0" : "-translate-x-full"} md:hidden`}

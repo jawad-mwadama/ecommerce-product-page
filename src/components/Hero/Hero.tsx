@@ -33,8 +33,8 @@ const galleryData: GalleryItem[] = [
 function Hero() {
   const [imageId, setImageId] = useState(0);
   return (
-    <div className="mx-auto flex items-center justify-center pt-16 sm:max-w-5xl">
-      <div className="justify-between gap-18 px-16 sm:flex">
+    <div className="flex items-center justify-center overflow-hidden px-12 pt-8 sm:mx-auto sm:max-w-5xl sm:pt-16">
+      <div className="sm:flex sm:justify-between sm:gap-18 sm:px-16">
         <div>
           <img
             src={galleryData[imageId].image}
