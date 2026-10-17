@@ -1,4 +1,4 @@
-import ImageGallery from "../ImageGallery/imageGallery";
+import ImageGallery from "../ImageGallery/ImageGallery";
 import HeroText from "./HeroText";
 
 function Hero() {
