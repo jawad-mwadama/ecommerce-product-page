@@ -1,7 +1,19 @@
+import { useState } from "react";
 import Cart from "../Cart/Cart";
-import Counter from "../Counter/Counter";
+import Counter from "../Cart/CartCounter";
 
 function HeroText() {
+  const [cartQuantity, setCartQuantity] = useState(1);
+
+  const handleIncrement = (): void => {
+    setCartQuantity((c: number) => c + 1);
+  };
+
+  const handleDecrement = (): void => {
+    if (cartQuantity > 1) {
+      setCartQuantity((c: number) => c - 1);
+    }
+  };
   return (
     <div>
       <div className="max-w-sm px-2.5 py-12">
@@ -18,7 +30,9 @@ function HeroText() {
           everything the weather can offer
         </p>
         <div className="flex items-center gap-4 py-2">
-          <span className="cursor-pointer text-3xl font-bold">$125</span>
+          <span className="cursor-pointer text-3xl font-bold">
+            ${125 * cartQuantity}
+          </span>
           <div className="rounded-lg bg-black px-1.5 text-white">
             <span>50%</span>
           </div>
@@ -28,7 +42,11 @@ function HeroText() {
         </span>
         {/* cart and counter */}
         <div className="flex items-center gap-4 py-6">
-          <Counter />
+          <Counter
+            handleIncrement={handleIncrement}
+            handleDecrement={handleDecrement}
+            cartQuantity={cartQuantity}
+          />
           <Cart />
         </div>
       </div>
