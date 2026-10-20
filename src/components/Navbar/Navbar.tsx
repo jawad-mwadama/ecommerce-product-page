@@ -22,7 +22,7 @@ function Navbar() {
   return (
     <nav
       aria-label="Main Navigation"
-      className="flex items-center justify-between border-b border-stone-200 px-4 py-4 sm:px-8 lg:px-12 xl:px-20"
+      className="sticky top-0 flex items-center justify-between border-b border-stone-200 bg-white px-4 py-4 sm:px-8 lg:px-12 xl:px-20"
     >
       <div className="flex items-center gap-10">
         <a href="/" aria-label="Sneaker store Home">
