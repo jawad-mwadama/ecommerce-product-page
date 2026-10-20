@@ -41,7 +41,7 @@ function HeroText() {
           $250
         </span>
         {/* cart and counter */}
-        <div className="flex items-center gap-4 py-6">
+        <div className="flex items-center justify-center gap-4 py-6">
           <Counter
             handleIncrement={handleIncrement}
             handleDecrement={handleDecrement}
